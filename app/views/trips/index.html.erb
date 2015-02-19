@@ -1,0 +1,16 @@
+<h1>These are all your Packing Lists</h1>
+
+<table class="table">
+<% @trips = Trip.all %>
+
+<% @trips.each do |trip| %>
+  <tr>
+    <td><a href="/trips/<%= trip.id %>"><%= trip.name %> </a></td>
+  </tr>
+<% end %>
+
+<%= link_to 'Create new trip', new_trip_path %>
+
+
+
+
