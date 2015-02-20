@@ -7696,3 +7696,13 @@ Completed 200 OK in 47ms (Views: 45.0ms | ActiveRecord: 1.0ms)
 
 
 Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-19 22:08:00 -0600
+
+
+Started GET "/trips" for ::1 at 2015-02-20 16:39:52 -0600
+Processing by TripsController#index as HTML
+  [1m[36mTrip Load (5.0ms)[0m  [1mSELECT "trips".* FROM "trips"[0m
+  Rendered trips/index.html.erb within layouts/application (67.0ms)
+Completed 200 OK in 289ms (Views: 119.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-20 16:39:53 -0600
