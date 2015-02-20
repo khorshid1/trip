@@ -7249,3 +7249,150 @@ ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplate
   Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.0ms)
   Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.0ms)
   Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (137.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_packs_on_trip_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_packs_on_trip_id' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_packs_on_item_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_packs_on_item_id' AND type='index'
+[0m
+  [1m[35m (1.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trips_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trips_on_city_id' AND type='index'
+
+  [1m[36m (1.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trips_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trips_on_user_id' AND type='index'
+[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (1.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_packs_on_trip_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_packs_on_trip_id' AND type='index'
+[0m
+  [1m[35m (1.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_packs_on_item_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_packs_on_item_id' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trips_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trips_on_city_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_trips_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_trips_on_user_id' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (6.0ms)[0m  DELETE FROM "users"
+  [1m[36mSQL (6.0ms)[0m  [1mDELETE FROM "trips"[0m
+  [1m[35mSQL (5.0ms)[0m  DELETE FROM "cities"
+  [1m[36mSQL (5.0ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35mSQL (6.0ms)[0m  DELETE FROM "packs"
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "users" ("name", "email", "password") VALUES (?, ?, ?)  [["name", "Khorshid"], ["email", "krahmaninejad2015@kellogg.northwestern.edu"], ["password", "codered"]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "users" ("name", "email", "password") VALUES (?, ?, ?)[0m  [["name", "Kevin"], ["email", "kchao2015@kellogg.northwestern.edu"], ["password", "codeblue"]]
+  [1m[35m (4.0ms)[0m  commit transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "users" ("name", "email", "password") VALUES (?, ?, ?)  [["name", "Lucy"], ["email", "lcheng2015@kellogg.northwestern.edu"], ["password", "codeorange"]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("name", "email", "password") VALUES (?, ?, ?)[0m  [["name", "Nick"], ["email", "nhoushower2015@kellogg.northwestern.edu"], ["password", "codeblack"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "users" ("name", "email", "password") VALUES (?, ?, ?)  [["name", "Alice"], ["email", "agarabrant2015@kellogg.northwestern.edu"], ["password", "coded"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "trips" ("name", "user_id", "city_id", "duration", "season") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Greece 2015"], ["user_id", 0], ["city_id", 0], ["duration", 14], ["season", "summer"]]
+  [1m[35m (4.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "trips" ("name", "user_id", "city_id", "duration", "season") VALUES (?, ?, ?, ?, ?)  [["name", "Argentina Spring Break"], ["user_id", 0], ["city_id", 0], ["duration", 14], ["season", "summer"]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "trips" ("name", "user_id", "city_id", "duration", "season") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Thailand 2015"], ["user_id", 0], ["city_id", 0], ["duration", 14], ["season", "fall"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "trips" ("name", "user_id", "city_id", "duration", "season") VALUES (?, ?, ?, ?, ?)  [["name", "DaaLong"], ["user_id", 0], ["city_id", 0], ["duration", 5], ["season", "all"]]
+  [1m[36m (20.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "trips" ("name", "user_id", "city_id", "duration", "season") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Vietfood"], ["user_id", 0], ["city_id", 0], ["duration", 7], ["season", "spring"]]
+  [1m[35m (62.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "cities" ("name", "country") VALUES (?, ?)  [["name", "Athens"], ["country", "Greece"]]
+  [1m[36m (53.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "cities" ("name", "country") VALUES (?, ?)[0m  [["name", "Buenos Aires"], ["country", "Argentina"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "cities" ("name", "country") VALUES (?, ?)  [["name", "Phuket"], ["country", "Thailand"]]
+  [1m[36m (32.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "cities" ("name", "country") VALUES (?, ?)[0m  [["name", "Beijing"], ["country", "China"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "cities" ("name", "country") VALUES (?, ?)  [["name", "Hanoi"], ["country", "Vietnam"]]
+  [1m[36m (56.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "items" ("name", "category", "season") VALUES (?, ?, ?)[0m  [["name", "Dress Pants"], ["category", "Clothes"], ["season", "all"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "items" ("name", "category", "season") VALUES (?, ?, ?)  [["name", "Casual Pants"], ["category", "Clothes"], ["season", "all"]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "items" ("name", "category", "season") VALUES (?, ?, ?)[0m  [["name", "Dress Shirt"], ["category", "Clothes"], ["season", "all"]]
+  [1m[35m (4.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "items" ("name", "category", "season") VALUES (?, ?, ?)  [["name", "Casual Shirt"], ["category", "Clothes"], ["season", "all"]]
+  [1m[36m (53.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "items" ("name", "category", "season") VALUES (?, ?, ?)[0m  [["name", "Bathing Suit"], ["category", "Clothes"], ["season", "summer"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "items" ("name", "category", "season") VALUES (?, ?, ?)  [["name", "Sunglasses"], ["category", "Accessories"], ["season", "summer"]]
+  [1m[36m (41.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "items" ("name", "category", "season") VALUES (?, ?, ?)[0m  [["name", "Pajamas"], ["category", "Clothes"], ["season", "all"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "items" ("name", "category", "season") VALUES (?, ?, ?)  [["name", "Beach Dress"], ["category", "Clothes"], ["season", "summer"]]
+  [1m[36m (67.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "items" ("name", "category", "season") VALUES (?, ?, ?)[0m  [["name", "Heels"], ["category", "Shoes"], ["season", "summer"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "items" ("name", "category", "season") VALUES (?, ?, ?)  [["name", "Suit"], ["category", "Clothes"], ["season", "all"]]
+  [1m[36m (28.0ms)[0m  [1mcommit transaction[0m
