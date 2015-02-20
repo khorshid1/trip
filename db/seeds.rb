@@ -46,6 +46,13 @@ beachdress = Item.create(name: "Beach Dress", category: "Clothes", season: "summ
 heels = Item.create(name: "Heels", category: "Shoes", season: "summer")
 suit = Item.create(name: "Suit", category: "Clothes", season: "all")
 
+puts "Creating seasons..."
+summer = Season.create(name:"Summer")
+fall = Season.create(name:"Fall")
+winter = Season.create(name:"Winter")
+spring = Season.create(name:"Spring")
+all = Season.create(name:"All")
+
 puts "Creating packing lists..."
 #Argentina Spring Break
 Pack.create(trip_id: argentina.id, item_id: dressshirt.id, quantity: "4")
