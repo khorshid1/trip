@@ -65,3 +65,4 @@ Pack.create(trip_id: thailand.id, item_id: pajamas.id, quantity: "2")
 Pack.create(trip_id: china.id, item_id: suit.id, quantity: "2")
 
 puts "There are now #{User.count} users, #{Trip.count} trips, #{City.count} cities, #{Item.count} items, and #{Pack.count} packing lists in the database."
+#add seasons count?
