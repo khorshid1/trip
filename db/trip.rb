@@ -1,7 +1,7 @@
 class Trip < ActiveRecord::Base
 
   belongs_to :season
-  has_many :items
   belongs_to :city
+  has_many :items
 
 end
