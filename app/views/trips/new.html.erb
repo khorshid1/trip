@@ -9,7 +9,6 @@
   <div class="form-group">
     <%= form.label :user_id %>
     <%= form.collection_select :user_id, User.order(:name), :id, :name, { include_blank: true }, { class: "form-control" } %>
-
   </div>
     
   <div class="form-group">
@@ -20,6 +19,11 @@
   <div class="form-group">
     <%= form.label :duration_of_trip %> (in days) 
     <%= form.text_field :duration, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :season %>
+    <%= form.text_field :season, class: "form-control" %>
   </div>
 
   <%= form.button 'Create Trip', class: "btn btn-success" %>

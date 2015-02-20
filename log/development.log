@@ -7570,3 +7570,129 @@ Completed 200 OK in 133ms (Views: 129.0ms | ActiveRecord: 1.0ms)
 
 
 Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-19 21:59:57 -0600
+
+
+Started GET "/trips" for ::1 at 2015-02-19 22:05:33 -0600
+Processing by TripsController#index as HTML
+  [1m[36mTrip Load (8.0ms)[0m  [1mSELECT "trips".* FROM "trips"[0m
+  Rendered trips/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 339ms (Views: 130.0ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-19 22:05:33 -0600
+
+
+Started GET "/trips/32" for ::1 at 2015-02-19 22:05:35 -0600
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[35mTrip Load (0.0ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 32]]
+  Rendered trips/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 84ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-19 22:05:36 -0600
+
+
+Started GET "/trips/33" for ::1 at 2015-02-19 22:05:38 -0600
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mTrip Load (0.0ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered trips/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 40ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-19 22:05:38 -0600
+
+
+Started GET "/trips/34" for ::1 at 2015-02-19 22:05:40 -0600
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[35mTrip Load (0.0ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 34]]
+  Rendered trips/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 42ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-19 22:05:40 -0600
+
+
+Started GET "/trips/35" for ::1 at 2015-02-19 22:05:42 -0600
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mTrip Load (0.0ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1[0m  [["id", 35]]
+  Rendered trips/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 41ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-19 22:05:42 -0600
+
+
+Started GET "/trips/36" for ::1 at 2015-02-19 22:05:44 -0600
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"36"}
+  [1m[35mTrip Load (1.0ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 36]]
+  Rendered trips/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 38ms (Views: 35.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-19 22:05:45 -0600
+
+
+Started GET "/trips/new" for ::1 at 2015-02-19 22:05:48 -0600
+Processing by TripsController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users"  ORDER BY "users"."name" ASC[0m
+  Rendered trips/new.html.erb within layouts/application (90.0ms)
+Completed 200 OK in 126ms (Views: 122.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-19 22:05:48 -0600
+
+
+Started POST "/trips" for ::1 at 2015-02-19 22:06:29 -0600
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wif1sVwGhtTGUC9k6AZ5EC81jgw8nFO/fadF/PU5M+CCkXL9A/NUnATUAP7O6WBaEeI8ZWr7ND756UYy0RpRhQ==", "trip"=>{"name"=>"Mt. Rushmore", "user_id"=>"31", "city_id"=>"Somewhere in Omaha", "duration"=>"7"}, "button"=>""}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (6.0ms)[0m  [1mINSERT INTO "trips" ("name", "user_id", "city_id", "duration") VALUES (?, ?, ?, ?)[0m  [["name", "Mt. Rushmore"], ["user_id", 31], ["city_id", 0], ["duration", 7]]
+  [1m[35m (3.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/trips
+Completed 302 Found in 27ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/trips" for ::1 at 2015-02-19 22:06:29 -0600
+Processing by TripsController#index as HTML
+  [1m[36mTrip Load (1.0ms)[0m  [1mSELECT "trips".* FROM "trips"[0m
+  Rendered trips/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-19 22:06:29 -0600
+
+
+Started GET "/trips/37" for ::1 at 2015-02-19 22:06:31 -0600
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[35mTrip Load (1.0ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT 1  [["id", 37]]
+  Rendered trips/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-19 22:06:31 -0600
+
+
+Started GET "/trips/new" for ::1 at 2015-02-19 22:06:34 -0600
+Processing by TripsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"  ORDER BY "users"."name" ASC[0m
+  Rendered trips/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 45ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-19 22:06:34 -0600
+
+
+Started GET "/trips/new" for ::1 at 2015-02-19 22:08:00 -0600
+Processing by TripsController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users"  ORDER BY "users"."name" ASC
+  Rendered trips/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 47ms (Views: 45.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-19 22:08:00 -0600
