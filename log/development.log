@@ -7396,3 +7396,177 @@ ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplate
   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
   [1m[35mSQL (2.0ms)[0m  INSERT INTO "items" ("name", "category", "season") VALUES (?, ?, ?)  [["name", "Suit"], ["category", "Clothes"], ["season", "all"]]
   [1m[36m (28.0ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/trips/new" for ::1 at 2015-02-19 21:55:37 -0600
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (126.0ms)
+Completed 500 Internal Server Error in 431ms
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Season):
+    23: 
+    24:   <div class="form-group">
+    25:     <%= form.label :season %>
+    26:     <%= form.collection_select :season, Season.order(:name), :id, :name, { include_blank: true }, { class: "form-control" } %>
+    27:   </div>
+    28: 
+    29:   <%= form.button 'Create Trip', class: "btn btn-success" %>
+  app/views/trips/new.html.erb:26:in `block in _app_views_trips_new_html_erb___49597299_56215044'
+  app/views/trips/new.html.erb:3:in `_app_views_trips_new_html_erb___49597299_56215044'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (17.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (176.0ms)
+
+
+Started GET "/trips/new" for ::1 at 2015-02-19 21:55:39 -0600
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (25.0ms)
+Completed 500 Internal Server Error in 47ms
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Season):
+    23: 
+    24:   <div class="form-group">
+    25:     <%= form.label :season %>
+    26:     <%= form.collection_select :season, Season.order(:name), :id, :name, { include_blank: true }, { class: "form-control" } %>
+    27:   </div>
+    28: 
+    29:   <%= form.button 'Create Trip', class: "btn btn-success" %>
+  app/views/trips/new.html.erb:26:in `block in _app_views_trips_new_html_erb___49597299_56215044'
+  app/views/trips/new.html.erb:3:in `_app_views_trips_new_html_erb___49597299_56215044'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (13.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (165.0ms)
+
+
+Started GET "/trips/new" for ::1 at 2015-02-19 21:55:43 -0600
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (20.0ms)
+Completed 500 Internal Server Error in 43ms
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Season):
+    23: 
+    24:   <div class="form-group">
+    25:     <%= form.label :season %>
+    26:     <%= form.collection_select :season, Season.order(:name), :id, :name, { include_blank: true }, { class: "form-control" } %>
+    27:   </div>
+    28: 
+    29:   <%= form.button 'Create Trip', class: "btn btn-success" %>
+  app/views/trips/new.html.erb:26:in `block in _app_views_trips_new_html_erb___49597299_56215044'
+  app/views/trips/new.html.erb:3:in `_app_views_trips_new_html_erb___49597299_56215044'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (13.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (142.0ms)
+
+
+Started GET "/trips/new" for ::1 at 2015-02-19 21:57:42 -0600
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 21ms
+
+SyntaxError (C:/code/trip/app/views/trips/new.html.erb:26: syntax error, unexpected ','
+...ason.order(:name), :id, :name,,{ include_blank: true }, { cl...
+...                               ^
+C:/code/trip/app/views/trips/new.html.erb:26: syntax error, unexpected ',', expecting ')'
+...:name,,{ include_blank: true }, { class: "form-control" } );...
+...                               ^):
+  app/views/trips/new.html.erb:26: syntax error, unexpected ','
+  app/views/trips/new.html.erb:26: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (12.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (139.0ms)
+
+
+Started GET "/trips/new" for ::1 at 2015-02-19 21:57:51 -0600
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 21ms
+
+SyntaxError (C:/code/trip/app/views/trips/new.html.erb:26: syntax error, unexpected ','
+...ason.order(:name), :id, :name,, { include_blank: true }, { c...
+...                               ^
+C:/code/trip/app/views/trips/new.html.erb:26: syntax error, unexpected ',', expecting ')'
+...name,, { include_blank: true }, { class: "form-control" } );...
+...                               ^):
+  app/views/trips/new.html.erb:26: syntax error, unexpected ','
+  app/views/trips/new.html.erb:26: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (17.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (13.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (148.0ms)
+
+
+Started GET "/trips/new" for ::1 at 2015-02-19 21:58:02 -0600
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (22.0ms)
+Completed 500 Internal Server Error in 41ms
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Season):
+    23: 
+    24:   <div class="form-group">
+    25:     <%= form.label :season %>
+    26:     <%= form.collection_select :season, Season.order(:name), :id, :name, { include_blank: true }, { class: "form-control" } %>
+    27:   </div>
+    28: 
+    29:   <%= form.button 'Create Trip', class: "btn btn-success" %>
+  app/views/trips/new.html.erb:26:in `block in _app_views_trips_new_html_erb___49597299_74848236'
+  app/views/trips/new.html.erb:3:in `_app_views_trips_new_html_erb___49597299_74848236'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (11.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (136.0ms)
+
+
+Started GET "/trips/new" for ::1 at 2015-02-19 21:59:30 -0600
+Processing by TripsController#new as HTML
+  Rendered trips/new.html.erb within layouts/application (21.0ms)
+Completed 500 Internal Server Error in 40ms
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Season):
+     8: 
+     9:   <div class="form-group">
+    10:     <%= form.label :user_id %>
+    11:     <%= form.collection_select :user_id, Season.order(:name), :id, :name, { include_blank: true }, { class: "form-control" } %>
+    12: 
+    13:   </div>
+    14:     
+  app/views/trips/new.html.erb:11:in `block in _app_views_trips_new_html_erb___49597299_51255168'
+  app/views/trips/new.html.erb:3:in `_app_views_trips_new_html_erb___49597299_51255168'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (11.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (136.0ms)
+
+
+Started GET "/trips/new" for ::1 at 2015-02-19 21:59:57 -0600
+Processing by TripsController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users"  ORDER BY "users"."name" ASC[0m
+  Rendered trips/new.html.erb within layouts/application (82.0ms)
+Completed 200 OK in 133ms (Views: 129.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-02-19 21:59:57 -0600
